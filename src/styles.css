@@ -1,0 +1,41 @@
+
+.jost {
+  font-family: "Jost", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 160px;
+    left: -100%;
+    width: 20rem;
+    height: 100vh;
+    background-color: #F6623E;
+    z-index: 8;
+    flex-direction: column;
+    align-items: center;
+    transition: 800ms ease-in-out;
+    color: #fff;
+    padding: 45px 0 200px 0;
+  }
+}
+
+.home-image {
+  z-index: 0;
+}
+
+.details {
+  z-index: 1;
+  position: absolute;
+}
+
+/* @media (min-width: 1602px) {
+  .mainbottom {
+    display: none;
+  }
+} */
+@media screen and (max-width: 680px) {
+  .controlehealth {
+    background-color: white;
+  }
+}
