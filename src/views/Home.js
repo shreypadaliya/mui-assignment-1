@@ -56,70 +56,30 @@ const Home = () => {
     <Box>
       <Header />
       {/* Apple Cider vinegar */}
-      <BackgroundContainer>
-        <Grid container alignItems="center">
-          <Grid item md={6} xs={12}>
-            <div
-              style={{ position: "relative", width: "100%", height: "100%" }}
-            >
-              <img
-                src={iron}
-                alt=""
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-              <Box
-                sx={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Box sx={{ textAlign: { md: "left", xs: "center" }, py: 2 }}>
-                  <Typography
-                    variant="h3"
-                    color="#F6623E"
-                    sx={{
-                      fontWeight: 400,
-                      lineHeight: "42px",
-                      fontSize: "30px",
-                      marginTop: "20px",
-                    }}
-                  >
-                    Good4Me
-                  </Typography>
-                  <Typography
-                    variant="h1"
-                    color="Black"
-                    gutterBottom
-                    sx={{
-                      fontWeight: 600,
-                      fontSize: "56px",
-                      lineHeight: "72px",
-                    }}
-                  >
-                    Apple Cider Vinegar
-                  </Typography>
-                  <Typography variant="body1" color="textPrimary" paragraph>
-                    Good4Me Apple Cider Vinegar gummies are the newest addition
-                    to your morning health and well-being regime.
-                  </Typography>
-                  <Button
-                    variant="contained"
-                    sx={{ backgroundColor: "#F6623E" }}
-                  >
-                    Show now
-                  </Button>
-                </Box>
-              </Box>
-            </div>
-          </Grid>
-        </Grid>
-      </BackgroundContainer>
+      
+      <Box width="100%" mt="150px" display="flex" flexDirection="column" justifyContent="flex-end" alignItems="flex-end">
+      <Box width="100%" bgcolor="#FEF0E7">
+        <Box className="home-image" width="100%" display="flex" justifyContent="center">
+          <img src={iron} alt="" />
+        </Box>
+      </Box>
+
+      <Box className="details" display="flex" flexDirection="column" alignItems="start" height="58%" justifyContent="center" px={{ xs: '30px', md: '80px' }} mt={{ xs: '30px', md: 0 }} mb="75px" width={{ xs: '100%', md: '50%' }}>
+        <Typography variant="h4" color="#F6623F" fontWeight="bold">Good4Me</Typography>
+        <Typography variant="h1" fontSize={{ xs: '40px', md: '56px' }} fontWeight="bold">Apple Cider Vinegar</Typography>
+        <Typography variant="body1" mt="10px" color="#454545" maxWidth={{ xs: '90%', md: '70%' }} textAlign={{ xs: 'center', md: 'start' }}>
+          Good4Me Apple Cider Vinegar gummies are the newest addition to your morning health and well-being regime.
+        </Typography>
+        <Box mt="35px">
+          <Button href="#" variant="contained" sx={{ backgroundColor: '#F6623E', px: '25px', py: '13px', textTransform: 'uppercase', fontSize: '16px', color: 'white', fontWeight: 'medium' }}>Show now</Button>
+        </Box>
+      </Box>
+
+      <Box className="mainbottom" position="absolute" bottom="0">
+        <img src={waveBottum} alt="" height={130} />
+      </Box>
+    </Box>
+      
 
       {/* Apple Cider vinegar */}
 
